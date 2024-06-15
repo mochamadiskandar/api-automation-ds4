@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "required": [],
+    "properties": {
+        "data": {
+            "type": "object",
+            "required": [],
+            "properties": {
+                "id": {
+                    "type": "number"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "avatar": {
+                    "type": "string"
+                }
+            }
+        },
+        "support": {
+            "type": "object",
+            "required": [],
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
