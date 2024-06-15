@@ -1,0 +1,39 @@
+Create API Automation using :
+- SuperTest (API Call)
+- Mocha (Test Framework)
+- Chai (Assertion)
+- Mochawesome (Report)
+
+**Install required packages in level dev and global (optional)**
+
+===========================================================================
+
+Struktur code in file Test
+---------------------------
+describe _ Test Suite
+
+it - Test Case
+    -- deklarasi variable
+    -- call API - Supertest
+    -- Validation - Chai
+
+Assertion in Chai
+----------
+dapat menggunakan beberapa style, assert / expect / should.
+saya pribadi lebih nyaman pakai expect karena syntax lebih alami dan mudah dibaca.
+selain itu expect memiliki fleksibilas yang tinggi walaupun digunakan untuk validasi yang kompleks.
+contoh : expect(user).to.have.property('address').that.is.an('object').that.includes({ city: 'New York'});
+
+Assertion - use 'chai-json-schema
+----------------------------------
+- perlu import chai, karena 'chai-json-schema' build in chai.
+- disarankan create file JSONSchema.json di folder terpisah
+- consume JSONSchema.json menggunakan helper (reusable)
+- helper ini yang akan sering digunakan dalam sebuat Test Case.
+
+Issue
+------
+Issue mochawesome :
+Pada config mocharc.js perlu diarahkan lokasi library mochawesome terinstall.
+answer : reporter: 'node_modules/mochawesome'
+
